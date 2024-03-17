@@ -4,9 +4,9 @@ export const Navigation = () => {
   return (
     <div>
         <ul className="bg-blue-800 flex gap-5 text-white ">
-            <Link to='/'>Home</Link>
-            <Link to='/about'>About</Link>
-            <Link to='/contact'>Contact</Link>
+            <Link to='/prueba-routing-ghPage/'>Home</Link>
+            <Link to='/prueba-routing-ghPage/about'>About</Link>
+            <Link to='/prueba-routing-ghPage/contact'>Contact</Link>
         </ul>
     </div>
   )

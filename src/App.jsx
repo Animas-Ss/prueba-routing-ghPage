@@ -18,9 +18,9 @@ function App() {
         <img src={reactLogo} className="logo react" alt="React logo" />
       </a>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/prueba-routing-ghPage/" element={<Home />} />
+        <Route path="/prueba-routing-ghPage/about" element={<About />} />
+        <Route path="/prueba-routing-ghPage/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
