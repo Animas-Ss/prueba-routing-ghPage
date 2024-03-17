@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, BrowserHash } from "react-router-dom";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -9,7 +9,7 @@ import { Navigation } from "./components/Nabvar/Navigation";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserHash>
       <Navigation />
       <a href="https://vitejs.dev" target="_blank">
         <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -18,11 +18,11 @@ function App() {
         <img src={reactLogo} className="logo react" alt="React logo" />
       </a>
       <Routes>
-        <Route path="/prueba-routing-ghPage/" element={<Home />} />
-        <Route path="/prueba-routing-ghPage/about" element={<About />} />
-        <Route path="/prueba-routing-ghPage/contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+    </BrowserHash>
   );
 }
 
